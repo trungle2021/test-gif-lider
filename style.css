@@ -1,3 +1,60 @@
-#dragon-gif{
-    transform: translateX(50%);
+#slide{
+    width: 100vw;
+}
+#dragon{
+    width: 200px;
+    height: auto;
+    cursor: pointer;
+    top: 50vh;
+    transform: translateY(-40%);
+    position: absolute;   
+    animation-name: stage1;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes stage1{
+    0%{
+        transform: translate(-5vw, 0px) rotate(-9deg);
+    }
+
+    25%{
+        transform: translate(5vw, -40%) rotate(-18deg);
+    }
+
+    50%{
+        top: 80px;
+        transform: translate(10vw, -30%) rotate(-27deg);
+    }
+
+    75%{
+        top: 40px;
+        transform:  translate(15vw, -20%) rotate(-36deg);
+    }
+
+    100%{
+        top: 0px;
+        transform: translate(25vw, -10%) rotate(-45deg);
+    }
+}
+
+@keyframes stage2{
+    /* 0%{
+        left: 360px;
+        top: 10px;
+    }
+
+
+    50%{
+        top: 150px;
+        transform: rotate(-35deg);
+    }
+
+    100%{
+        top: 200px;
+        transform: rotate(-45deg);
+    } */
 }
