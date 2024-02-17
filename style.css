@@ -1,60 +1,85 @@
-#slide{
-    width: 100vw;
+/* #slide {
+  width: 100vw;
 }
-#dragon{
-    width: 200px;
-    height: auto;
-    cursor: pointer;
-    top: 50vh;
-    transform: translateY(-40%);
-    position: absolute;   
-    animation-name: stage1;
-    animation-duration: 3s;
-    animation-timing-function: linear;
-    animation-fill-mode: both;
-    animation-iteration-count: infinite;
-}
-
-
-@keyframes stage1{
-    0%{
-        transform: translate(-5vw, 0px) rotate(-9deg);
-    }
-
-    25%{
-        transform: translate(5vw, -40%) rotate(-18deg);
-    }
-
-    50%{
-        top: 80px;
-        transform: translate(10vw, -30%) rotate(-27deg);
-    }
-
-    75%{
-        top: 40px;
-        transform:  translate(15vw, -20%) rotate(-36deg);
-    }
-
-    100%{
-        top: 0px;
-        transform: translate(25vw, -10%) rotate(-45deg);
-    }
+#dragon {
+  width: 200px;
+  height: auto;
+  cursor: pointer;
+  top: 50vh;
+  transform: translateY(-50%);
+  position: absolute;
+  animation-name: stage1;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
 }
 
-@keyframes stage2{
-    /* 0%{
-        left: 360px;
-        top: 10px;
-    }
+@keyframes stage1 {
+  0% {
+    transform: translate(10vw, 0vh) rotate(-9deg);
+  }
 
+   25% {
+    transform: translate(25vw, 25vh) rotate(-18deg);
+  } 
 
-    50%{
-        top: 150px;
-        transform: rotate(-35deg);
-    }
+  50% {
+    top: 80px;
+    transform: translate(50vw, 50vh) rotate(-27deg);
+  }
 
-    100%{
-        top: 200px;
-        transform: rotate(-45deg);
-    } */
+  75% {
+    top: 40px;
+    transform: translate(75vw, 75vh) rotate(-36deg);
+  }
+
+  100% {
+    top: 0px;
+    transform: translate(100vw, 100vh) rotate(-45deg);
+  } 
+} */
+
+/* .dot {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: moveM 4s linear infinite;
+} */
+
+#dragon {
+  width: 200px;
+  height: auto;
+  cursor: pointer;
+  top: 50vh;
+  transform: translateY(-50%);
+  position: absolute;
+  animation: moveM 4s linear backwards;
+}
+
+@keyframes moveM {
+  0% {
+    top: 50%;
+    left: 10%;
+  }
+  25% {
+    top: 10%;
+    left: 30%;
+  }
+  50% {
+    top: 50%;
+    left: 50%;
+  }
+  /* 75% {
+    top: 90%;
+    left: 70%;
+  } */
+  /* 100% {
+    top: 50%;
+    left: 90%;
+  } */
 }
